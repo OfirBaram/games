@@ -32,8 +32,8 @@ export class SimpleSpec {
 
     private clickOnBox(index) {
         for (var i = 0; i < this.box.length; i++) {
-            const tttt = this.box[i].getText();
-            if (tttt == index) {
+            const box = this.box[i].getText();
+            if (box == index) {
                 this.box[i].click();
                 return;
             }
